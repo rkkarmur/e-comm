@@ -21,7 +21,7 @@ const login = () =>{
             console.log("-------");
           } else {
             console.log(rows);
-            res.status(501).end("ser");
+            res.status(501).end("server error");
           }
         });
       });
