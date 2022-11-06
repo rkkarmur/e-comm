@@ -1,6 +1,12 @@
 const express = require("express");
 
 const login = require("./router/login");
+const registration = require("./router/registration");
+const user_update = require("./router/user_update");
+
+
+
+
 
 
 const app = express();
@@ -15,6 +21,10 @@ const app = express();
 app.use(express.json())
 
 app.use("/", login());
+app.use("/", registration());
+app.use("/", user_update());
+
+
 
 
 
