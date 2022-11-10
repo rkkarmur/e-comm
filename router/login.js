@@ -7,7 +7,7 @@ const login = () => {
   router.get("/login", (req, res, next) => {
     console.log("----->login");
     try{
-      throw new Error("HSJGSYHJVSGH")
+      // throw new Error("HSJGSYHJVSGH")
       if (!req.body.email_id || !req.body.password) {
         res.status(400).send("please enter email and password  ");
       } else {

@@ -5,7 +5,7 @@ const user_update = () => {
   const router = Router();
 
   router.put("/user_update/:user_id", (req, res, next) => {
-    if ( !req.body.email_id || !req.body.password) {
+    if ( !req.body.email_id || !req.body.user_name || !req.body.password) {
       res.status(400).send("please enter user name,email and password  ");
     } else {
       connection.query(
